@@ -49,7 +49,7 @@ p{
     border-radius: 10px;
 }
 
-h4{
+.time p{
     color: hsl(332, 51%, 32%);
     font-size: 18px;
     font-weight: 600;
