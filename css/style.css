@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", sans-serif;
+}
+
+.container{
+    background-color: white;
+    border-radius: 20px;
+    max-width: 640px;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+img{
+    width: 100%;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: hsl(24, 5%, 18%);
+    margin-bottom: 1rem;
+}
+
+p{
+    color: hsl(30, 10%, 34%);
+    font-size: 14px;
+}
+
+.time{
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+h4{
+    color: hsl(332, 51%, 32%);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.time ul{
+    margin-left: 1.5rem;
+}
+
+.time li{
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0.6rem 0 0 1rem;
+}
+
+.time li::marker{
+    font-size: 12px;
+    color: hsl(332, 51%, 32%);
+}
+
+span{
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+}
+
+h2{
+    font-family: "Young Serif", serif;
+    font-size: 27px;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredients{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.ingredients ul{
+    margin-left: 1.5rem;
+}
+
+.ingredients li{
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0.6rem 0 0 1rem;
+}
+
+.ingredients li::marker{
+    font-size: 12px;
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.instructions ol{
+    margin-left: 1.5rem;
+}
+
+.instructions li{
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0.6rem 0 0 1rem;
+}
+
+.instructions li::marker{
+    color: hsl(14, 45%, 36%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+}
+
+.nutrition p{
+    margin: 1rem 0;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+tr:not(:last-child){
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+td{
+    color: hsl(14, 45%, 36%);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0.5rem 0;
+}
+
+td:first-child{
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 1.8rem;
+}
+
+@media (max-width: 380px){
+    body{
+        background-color: white;
+    }
+
+    .container{
+        background-color: white;
+        border-radius: 0;
+        margin: 0;
+        margin-bottom: 1rem;
+        padding: 0 2rem;
+    }
+
+    img{
+        border-radius: 0;
+        margin: 0 -2rem;
+        min-width: 380px;
+    }
+}
